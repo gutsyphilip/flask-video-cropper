@@ -4,33 +4,46 @@
     <meta charset="UTF-8" />
     <title>Video Cropper</title>
     <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <h1 class="title">Video Cropper</h1>
-    <form
-      class="input-form"
-      action="/crop"
-      method="POST"
-      enctype="multipart/form-data"
-    >
-      <div class="start-time">
-        <label for="hour">Hour:</label
-        ><input type="number" id="hour" name="hour" value="0" /><br />
-        <label for="minutes">Minutes:</label
-        ><input type="number" id="minutes" name="minutes" value="0" /><br />
-        <label for="seconds">Seconds:</label
-        ><input type="number" id="seconds" name="seconds" value="0" /><br />
-      </div>
-      <div class="duration">
-        <label for="duration">Duration in seconds</label>
-        <input type="number" name="duration" id="duration" />
-      </div>
-      <div class="video-input">
-        <label for="video_file">Video file</label>
-        <input type="file" name="video_file" id="video_file" />
-      </div>
-      <button class="submit-button" type="submit">Submit</button>
-    </form>
+    <section class="video-form-wrapper">
+      <h1 class="title">Video Cropper</h1>
+      <form
+        class="video-form"
+        action="/crop"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <label for="hour">
+          Hour:
+          <input type="number" id="hour" name="hour" value="0" />
+        </label>
+        <label for="minutes">
+          Minutes:
+          <input type="number" id="minutes" name="minutes" value="0"
+        /></label>
+        <label for="seconds">
+          Seconds:
+          <input type="number" id="seconds" name="seconds" value="0" />
+        </label>
+
+        <label for="duration">
+          Duration in seconds:
+          <input type="number" name="duration" id="duration" required />
+        </label>
+
+        <label for="video_file">
+          Video file:
+          <input type="file" name="video_file" id="video_file" required />
+        </label>
+
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </section>
   </body>
 </html>

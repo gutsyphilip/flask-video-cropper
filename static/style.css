@@ -1,3 +1,50 @@
-* {
-  font-size: 12px;
+/* Do not edit this code */
+
+body {
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  line-height: 1.8;
+}
+
+.video-form-wrapper {
+  color: rgb(0, 227, 173);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.video-form {
+  background-color: #ffffff;
+  color: #404040;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-form > * {
+  margin: 0.5rem 0;
+  font-size: 14px;
+}
+
+.video-form > label {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-form input {
+  min-height: 1.5rem;
+}
+
+.video-form button {
+  background-color: #2c5364;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
 }
